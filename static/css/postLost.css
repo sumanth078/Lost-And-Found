@@ -150,12 +150,12 @@ form .form-row .textarea{
     z-index: 1;
   }
   
-  .input-data input[type="file"]:hover {
+  /* .input-data input[type="file"]:hover {
     border-color: #56d8e4;
     background-color: #f0f8ff;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transform: scale(1.05);
-  }
+  } */
   
   .input-data input[type="file"]:focus {
     outline: none;
@@ -167,14 +167,14 @@ form .form-row .textarea{
     padding: 5px 5px;
     margin-right: 10px;
     border: none;
-    background-color: #3498db;
+    background: -webkit-linear-gradient(right, #75DE79, #56d8e4);
     color: white;
     border-radius: 5px;
     transition: 0.3s ease;
   }
   
   .input-data input[type="file"]::file-selector-button:hover {
-    background-color: #75DE79;
+    background: -webkit-linear-gradient(left, #75DE79, #56d8e4);
     cursor: pointer;
   }
   
