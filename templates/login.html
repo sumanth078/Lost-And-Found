@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ===== Iconscout CSS ===== -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <!-- ===== CSS ===== -->
+     <link rel="stylesheet" href="../static/css/login.css">
+     <link rel="stylesheet" href="../static/css/navbar.css">
+     <title>FindMyStuff</title>
+  </head>
+  <body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar">
+          <!-- Left Logo and Name (FMS) -->
+          <div class="logo">
+            <a href="index.html">
+              <img src="../static/images/logo.jpg" alt="Logo">
+              <span style="color: white;">FindMyStuff</span>
+            </a>
+          </div>
+          <!-- Center Menu Items -->
+          <div class="menu">
+            <a href="./index.html">Home</a>
+            <a href="#">About Us</a>
+            <div class="dropdown">
+              <a href="#">Lost</a>
+              <div class="dropdown-content">
+                <a href="#">View Lost Items</a>
+                <a href="./postLost.html">Post Lost Items</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="#">Found</a>
+              <div class="dropdown-content">
+                <a href="#">View Found Items</a>
+                <a href="#">Post Found Items</a>
+              </div>
+            </div>
+            <a href="./contactus.html">Contact Us</a>
+          </div>
+    
+          <!-- Right Login and SignUp Buttons -->
+          <div class="auth-buttons">
+            <a href="./login.html" class="login">Login</a>
+            <a href="./registration.html" class="signup">SignUp</a>
+          </div>
+        </nav>
+      </header>
+    <div class="loginPage">
+    <div class="logincontainer">
+      <div class="form login">
+        <span class="title">Login</span>
+
+        <form action="#">
+          <div class="input-field">
+            <input type="text" placeholder="Enter your email" required />
+            <i class="uil uil-envelope icon"></i>
+          </div>
+          <div class="input-field">
+            <input
+              type="password"
+              class="password"
+              placeholder="Enter your password"
+              required
+            />
+            <i class="uil uil-lock icon"></i>
+            <i class="uil uil-eye-slash showHidePw"></i>
+          </div>
+
+          <div class="checkbox-text">
+            <div class="checkbox-content">
+              <input type="checkbox" id="logCheck" />
+              <label for="logCheck" class="text">Remember me</label>
+            </div>
+
+            <a href="#" class="text">Forgot password?</a>
+          </div>
+
+          <div class="input-field button">
+            <input type="button" value="Login" />
+          </div>
+          <div class="login-signup">
+            <span class="text"
+              >Not a member?
+              <a href="./registration.html" class="text signup-link">Signup Now</a>
+            </span>
+          </div>
+        </form>
+      </div>
+    </div>
+    </div>
+    <script>
+      const pwShowHide = document.querySelectorAll(".showHidePw"),
+        pwFields = document.querySelectorAll(".password");
+
+      // js code to show/hide password and change icon
+      pwShowHide.forEach((eyeIcon) => {
+        eyeIcon.addEventListener("click", () => {
+          pwFields.forEach((pwField) => {
+            if (pwField.type === "password") {
+              pwField.type = "text";
+
+              pwShowHide.forEach((icon) => {
+                icon.classList.replace("uil-eye-slash", "uil-eye");
+              });
+            } else {
+              pwField.type = "password";
+
+              pwShowHide.forEach((icon) => {
+                icon.classList.replace("uil-eye", "uil-eye-slash");
+              });
+            }
+          });
+        });
+      });
+    </script>
+    <footer class="footer">
+        <div class="container">
+          <ul class="nav">
+            <li><a href="./index.html">Home</a> </li>
+            <li>|</li>
+            <li><a href="./aboutus.html">About us</a> </li>
+            <li>|</li>
+            <li><a href="./postLost.html">Lost</a> </li>
+            <li>|</li>
+            <li><a href="./booklistings">Book Listings</a> </li>
+            <li>|</li>
+            <li><a href="./contactus.html">contact us</a> </li>
+          </ul>
+        </div>
+          <p class="copy"> Copy rights @Deepika.V </p>
+      </footer>
+  </body>
+</html>

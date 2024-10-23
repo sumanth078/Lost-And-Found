@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FindMyStuff</title>
+  <link rel="stylesheet" href="../static/css/navbar.css">
+  <link rel="stylesheet" href="../static/css/registration.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+</head>
+<body>
+
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <!-- Left Logo and Name (FMS) -->
+      <div class="logo">
+        <a href="index.html">
+          <img src="../static/images/logo.jpg" alt="Logo">
+          <span style="color: white;">FindMyStuff</span>
+        </a>
+      </div>
+      <!-- Center Menu Items -->
+      <div class="menu">
+        <a href="./index.html">Home</a>
+        <a href="#">About Us</a>
+        <div class="dropdown">
+          <a href="#">Lost</a>
+          <div class="dropdown-content">
+            <a href="#">View Lost Items</a>
+            <a href="./postLost.html">Post Lost Items</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="#">Found</a>
+          <div class="dropdown-content">
+            <a href="#">View Found Items</a>
+            <a href="#">Post Found Items</a>
+          </div>
+        </div>
+        <a href="#">Contact Us</a>
+      </div>
+
+      <!-- Right Login and SignUp Buttons -->
+      <div class="auth-buttons">
+        <a href="./login.html" class="login">Login</a>
+        <a href="./registration.html" class="signup">SignUp</a>
+      </div>
+    </nav>
+  </header>
+  <div class="registrationPage">
+  <div class="registration-container">
+    <!-- Title section -->
+    <div class="title">Registration</div>
+    <div class="content">
+      <!-- Registration form -->
+      <form action="#">
+        <div class="user-details">
+          <!-- Input for Full Name -->
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" required>
+          </div>
+          <!-- Input for Username -->
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input type="text" placeholder="Enter your username" required>
+          </div>
+          <!-- Input for Email -->
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" required>
+          </div>
+          <!-- Input for Phone Number -->
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter your number" required>
+          </div>
+          <!-- Input for Password -->
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="text" placeholder="Enter your password" required>
+          </div>
+          <!-- Input for Confirm Password -->
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="text" placeholder="Confirm your password" required>
+          </div>
+        </div>
+        <div class="gender-details">
+          <!-- Radio buttons for gender selection -->
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <input type="radio" name="gender" id="dot-3">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <!-- Label for Male -->
+            <label for="dot-1">
+              <span class="dot one"></span>
+              <span class="gender">Male</span>
+            </label>
+            <!-- Label for Female -->
+            <label for="dot-2">
+              <span class="dot two"></span>
+              <span class="gender">Female</span>
+            </label>
+            <!-- Label for Prefer not to say -->
+            <label for="dot-3">
+              <span class="dot three"></span>
+              <span class="gender">Prefer not to say</span>
+            </label>
+          </div>
+        </div>
+        <!-- Submit button -->
+        <div class="button">
+            <a href="./index.html">
+                <input type="submit" value="Register">
+            </a>
+        </div>
+        <div class="login-signup">
+            <span class="text"
+              >Already a member?
+              <a href="./login.html" class="text login-link">Login Now</a>
+            </span>
+          </div>
+      </form>
+    </div>
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <ul class="nav">
+      <li><a href="./index.html">Home</a> </li>
+      <li>|</li>
+      <li><a href="./aboutus.html">About us</a> </li>
+      <li>|</li>
+      <li><a href="./postLost.html">Lost</a> </li>
+      <li>|</li>
+      <li><a href="./booklistings">Book Listings</a> </li>
+      <li>|</li>
+      <li><a href="./contactus.html">contact us</a> </li>
+    </ul>
+  </div>
+    <p class="copy"> Copy rights @Deepika.V </p>
+</footer>
+</body>
+</html>
